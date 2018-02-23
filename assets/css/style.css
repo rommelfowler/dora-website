@@ -1,0 +1,124 @@
+/* line 1, ../sass/addons/_globals.sass */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* line 3, ../sass/addons/_globals.sass */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 7, ../sass/addons/_globals.sass */
+body {
+  font-family: "Raleway", sans-serif;
+  height: 100%;
+}
+
+/* line 12, ../sass/addons/_globals.sass */
+ul li {
+  font-size: 14px;
+  line-height: 1.3em;
+  text-decoration: none;
+  list-style: none;
+}
+/* line 18, ../sass/addons/_globals.sass */
+ul a {
+  text-decoration: none;
+  color: #333;
+}
+/* line 22, ../sass/addons/_globals.sass */
+ul a:hover {
+  color: #dbc057;
+}
+
+/* line 25, ../sass/addons/_globals.sass */
+h1, h2, h3, h4, h5 {
+  color: #333;
+}
+
+/* line 28, ../sass/addons/_globals.sass */
+h1 {
+  font-size: 25px;
+}
+
+/* line 6, ../sass/style.sass */
+.container {
+  display: grid;
+  grid-template-columns: 0.19fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "nav inner-body inner-body inner-body";
+}
+
+/* line 12, ../sass/style.sass */
+.nav {
+  grid-area: nav;
+  position: fixed;
+  height: 100%;
+  padding: 20px;
+  overflow: hidden;
+  background: #eaeaea;
+  z-index: 100;
+  clear: both;
+}
+/* line 22, ../sass/style.sass */
+.nav ul {
+  height: 100%;
+}
+/* line 25, ../sass/style.sass */
+.nav ul li {
+  line-height: 5em;
+  margin: 1em auto;
+}
+
+/* line 29, ../sass/style.sass */
+.inner-body {
+  grid-area: inner-body;
+}
+
+/* line 33, ../sass/style.sass */
+.header {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "cta cta cta cta-img";
+  background-image: linear-gradient(rgba(226, 199, 93, 0.8), rgba(167, 146, 64, 0.87)), url("/assets/img/pattern-yellow.jpg");
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: contain;
+  width: 100%;
+  overflow: hidden;
+}
+/* line 44, ../sass/style.sass */
+.header .cta {
+  grid-area: cta;
+}
+/* line 47, ../sass/style.sass */
+.header .cta-img {
+  grid-area: cta-img;
+  justify-items: end;
+}
+/* line 52, ../sass/style.sass */
+.header .cta h1 span.expressive {
+  font-size: 100px;
+  font-family: "Abril Fatface", cursive;
+  z-index: 99999;
+  text-shadow: 10px 2px 20px rgba(238, 238, 238, 0.46);
+}
+
+/* line 58, ../sass/style.sass */
+.cta {
+  position: absolute;
+  top: 40%;
+  left: 15%;
+  vertical-align: middle;
+}
+
+/* line 65, ../sass/style.sass */
+.design {
+  background: linear-gradient(#69111a, #d02436);
+  height: 700px;
+}
+/* line 69, ../sass/style.sass */
+.design .folio-item {
+  display: inline;
+}

@@ -1,0 +1,70 @@
+// VARS
+@import "addons/vars"
+// GLOBALS
+@import "addons/globals"
+
+.container
+  display: grid
+  grid-template-columns: .19fr 1fr 1fr 1fr
+  grid-template-rows: 1fr 1fr 1fr 1fr
+  grid-template-areas: "nav inner-body inner-body inner-body"
+
+.nav
+  grid-area: nav
+  position: fixed
+  height: 100%
+  padding: 20px
+  overflow: hidden
+  background: $gray
+  z-index: 100
+  clear: both
+
+  ul
+    height: 100%
+
+  ul li
+    line-height: 5em
+    margin: 1em auto
+
+.inner-body
+  grid-area: inner-body
+
+// Header Section
+.header
+  display: inline-grid
+  grid-template-columns: 1fr 1fr 1fr 1fr
+  grid-template-areas: "cta cta cta cta-img"
+  background-image: $linear-gradient-yellow, url('/assets/img/pattern-yellow.jpg')
+  background-position: center center
+  background-attachment: fixed
+  background-size: contain
+  width: 100%
+  overflow: hidden
+
+  .cta
+    grid-area: cta
+
+  .cta-img
+    grid-area: cta-img
+    justify-items: end
+
+  .cta h1
+    span.expressive
+      font-size: 100px
+      font-family: $font-emph
+      z-index: 99999
+      text-shadow: 10px 2px 20px rgba(238, 238, 238, 0.46)
+
+.cta
+  position: absolute
+  top: 40%
+  left: 15%
+  vertical-align: middle
+
+// Design Section
+.design
+  background: $linear-gradient-red
+  height: 700px
+
+  .folio-item
+    display: inline
