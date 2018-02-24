@@ -8,7 +8,7 @@ $(window).scroll(function(){
     "-moz-filter": "blur("+yScroll/75+"px)",
     "filter": "blur("+yScroll/75+"px)"
   });
-  $(".design").css({'transform':'translate(0px,-' + yScroll/10 + '% )'});
+  $(".design").css({'transform':'translate(0px,-' + yScroll/20 + '% )'});
 
 
 });

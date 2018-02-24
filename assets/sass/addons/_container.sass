@@ -1,0 +1,27 @@
+.container
+  display: grid
+  grid-template-columns: 10% 90%
+  grid-template-rows: 1fr 1fr 1fr 1fr
+  grid-template-areas: "nav inner-body "
+
+.nav
+  grid-area: nav
+  position: fixed
+  height: 100%
+  width: 8%
+  padding: 20px
+  overflow: hidden
+  background: $gray
+  text-align: center
+  z-index: 100
+  clear: both
+
+  ul
+    height: 100%
+
+  ul li
+    line-height: 5em
+    margin: 1em auto
+
+.inner-body
+  grid-area: inner-body

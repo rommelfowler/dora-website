@@ -35,52 +35,60 @@ ul a:hover {
 /* line 25, ../sass/addons/_globals.sass */
 h1, h2, h3, h4, h5 {
   color: #333;
+  margin: 10px auto;
 }
 
-/* line 28, ../sass/addons/_globals.sass */
+/* line 29, ../sass/addons/_globals.sass */
 h1 {
-  font-size: 25px;
+  font-size: 30px;
 }
 
-/* line 6, ../sass/style.sass */
+/* line 32, ../sass/addons/_globals.sass */
+h1.white {
+  color: #eee;
+}
+
+/* line 1, ../sass/addons/_container.sass */
 .container {
   display: grid;
-  grid-template-columns: 0.19fr 1fr 1fr 1fr;
+  grid-template-columns: 10% 90%;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-areas: "nav inner-body inner-body inner-body";
+  grid-template-areas: "nav inner-body ";
 }
 
-/* line 12, ../sass/style.sass */
+/* line 7, ../sass/addons/_container.sass */
 .nav {
   grid-area: nav;
   position: fixed;
   height: 100%;
+  width: 8%;
   padding: 20px;
   overflow: hidden;
-  background: #eaeaea;
+  background: #e4e4e4;
+  text-align: center;
   z-index: 100;
   clear: both;
 }
-/* line 22, ../sass/style.sass */
+/* line 19, ../sass/addons/_container.sass */
 .nav ul {
   height: 100%;
 }
-/* line 25, ../sass/style.sass */
+/* line 22, ../sass/addons/_container.sass */
 .nav ul li {
   line-height: 5em;
   margin: 1em auto;
 }
 
-/* line 29, ../sass/style.sass */
+/* line 26, ../sass/addons/_container.sass */
 .inner-body {
   grid-area: inner-body;
 }
 
-/* line 33, ../sass/style.sass */
+/* line 3, ../sass/addons/_header.sass */
 .header {
   display: inline-grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-areas: "cta cta cta cta-img";
+  grid-template-areas: "cta cta cta-img cta-img";
   background-image: linear-gradient(rgba(226, 199, 93, 0.8), rgba(167, 146, 64, 0.87)), url("/assets/img/pattern-yellow.jpg");
   background-position: center center;
   background-attachment: fixed;
@@ -88,24 +96,29 @@ h1 {
   width: 100%;
   overflow: hidden;
 }
-/* line 44, ../sass/style.sass */
+/* line 14, ../sass/addons/_header.sass */
 .header .cta {
   grid-area: cta;
 }
-/* line 47, ../sass/style.sass */
+/* line 17, ../sass/addons/_header.sass */
 .header .cta-img {
   grid-area: cta-img;
   justify-items: end;
 }
-/* line 52, ../sass/style.sass */
+/* line 21, ../sass/addons/_header.sass */
+.header .cta-img img {
+  width: 350px;
+  position: relative;
+  top: 3px;
+}
+/* line 27, ../sass/addons/_header.sass */
 .header .cta h1 span.expressive {
   font-size: 100px;
   font-family: "Abril Fatface", cursive;
   z-index: 99999;
-  text-shadow: 10px 2px 20px rgba(238, 238, 238, 0.46);
 }
 
-/* line 58, ../sass/style.sass */
+/* line 32, ../sass/addons/_header.sass */
 .cta {
   position: absolute;
   top: 40%;
@@ -113,12 +126,49 @@ h1 {
   vertical-align: middle;
 }
 
-/* line 65, ../sass/style.sass */
+/* line 11, ../sass/style.sass */
 .design {
-  background: linear-gradient(#69111a, #d02436);
-  height: 700px;
+  background: #eee;
+  height: auto;
+  padding: 5%;
+  text-align: center;
+  z-index: 5;
+  position: absolute;
 }
-/* line 69, ../sass/style.sass */
+/* line 19, ../sass/style.sass */
+.design h1 {
+  font-family: "Roboto", sans-serif;
+}
+/* line 22, ../sass/style.sass */
 .design .folio-item {
   display: inline;
+}
+/* line 25, ../sass/style.sass */
+.design .folio-item img {
+  width: 25.33333%;
+  margin: 20px;
+}
+
+/* line 30, ../sass/style.sass */
+.mondays {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "video video video video";
+  position: relative;
+  height: auto;
+  clear: both;
+  top: 30%;
+}
+/* line 39, ../sass/style.sass */
+.mondays .video {
+  grid-area: video;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+/* line 45, ../sass/style.sass */
+.mondays .video video {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }

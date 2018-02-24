@@ -1,0 +1,36 @@
+
+// Header Section
+.header
+  display: inline-grid
+  grid-template-columns: 1fr 1fr 1fr 1fr
+  grid-template-areas: "cta cta cta-img cta-img"
+  background-image: $linear-gradient-yellow, url('/assets/img/pattern-yellow.jpg')
+  background-position: center center
+  background-attachment: fixed
+  background-size: contain
+  width: 100%
+  overflow: hidden
+
+  .cta
+    grid-area: cta
+
+  .cta-img
+    grid-area: cta-img
+    justify-items: end
+
+    img
+      width: 350px
+      position: relative
+      top: 3px
+
+  .cta h1
+    span.expressive
+      font-size: 100px
+      font-family: $font-emph
+      z-index: 99999
+
+.cta
+  position: absolute
+  top: 40%
+  left: 15%
+  vertical-align: middle
