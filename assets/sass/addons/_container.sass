@@ -1,8 +1,9 @@
 .container
   display: grid
-  grid-template-columns: 10% 90%
+  grid-template-columns: .25fr 1fr 1fr 1fr
   grid-template-rows: 1fr 1fr 1fr 1fr
-  grid-template-areas: "nav inner-body "
+  grid-template-areas: "nav inner-body inner-body inner-body"
+  overflow: hidden
 
 .nav
   grid-area: nav
@@ -25,3 +26,6 @@
 
 .inner-body
   grid-area: inner-body
+
+i.fa
+  margin: auto 5px
