@@ -51,13 +51,12 @@ h1.white {
 /* line 1, ../sass/addons/_container.sass */
 .container {
   display: grid;
-  grid-template-columns: 0.25fr 1fr 1fr 1fr;
+  grid-template-columns: 10% 90%;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-areas: "nav inner-body inner-body inner-body";
-  overflow: hidden;
+  grid-template-areas: "nav inner-body ";
 }
 
-/* line 8, ../sass/addons/_container.sass */
+/* line 7, ../sass/addons/_container.sass */
 .nav {
   grid-area: nav;
   position: fixed;
@@ -70,24 +69,19 @@ h1.white {
   z-index: 100;
   clear: both;
 }
-/* line 20, ../sass/addons/_container.sass */
+/* line 19, ../sass/addons/_container.sass */
 .nav ul {
   height: 100%;
 }
-/* line 23, ../sass/addons/_container.sass */
+/* line 22, ../sass/addons/_container.sass */
 .nav ul li {
   line-height: 5em;
   margin: 1em auto;
 }
 
-/* line 27, ../sass/addons/_container.sass */
+/* line 26, ../sass/addons/_container.sass */
 .inner-body {
   grid-area: inner-body;
-}
-
-/* line 30, ../sass/addons/_container.sass */
-i.fa {
-  margin: auto 5px;
 }
 
 /* line 3, ../sass/addons/_header.sass */
